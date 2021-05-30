@@ -41,11 +41,14 @@ public class Program {
 			}
 
 		}
-		
+		System.out.println();
+		System.out.println("Valor da contribuição");
+		Double x = 0.0;
 		for (Dados contribuintes : list) {
-			System.out.println(contribuintes.impostos());
+			System.out.println(contribuintes.valorPago());
+			x += contribuintes.impostos();
 		}
-		
+		System.out.printf("Total pago: $" + "%.2f", x);
 
 		sc.close();
 	}

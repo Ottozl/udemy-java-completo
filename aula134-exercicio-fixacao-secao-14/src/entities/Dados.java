@@ -4,7 +4,7 @@ public abstract class Dados {
 
 	private String nome;
 	private Double rendaAnual;
-	
+
 	public Dados() {
 	}
 
@@ -28,13 +28,12 @@ public abstract class Dados {
 	public void setRendaAnual(Double rendaAnual) {
 		this.rendaAnual = rendaAnual;
 	}
-	
+
 	public abstract Double impostos();
-	
-	public String taxesPaid() {
-		return nome
-				+ ": $"
-				+ String.format("%.2f", impostos());
+
+	public String valorPago() {
+		return nome + ": $" + String.format("%.2f", impostos());
+
 	}
-	
+
 }

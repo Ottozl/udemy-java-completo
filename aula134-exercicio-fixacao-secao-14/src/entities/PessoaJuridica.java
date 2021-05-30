@@ -1,9 +1,9 @@
 package entities;
 
 public class PessoaJuridica extends Dados {
-	
+
 	private Integer numeroDeFuncionarios;
-	
+
 	public PessoaJuridica() {
 		super();
 	}
@@ -30,7 +30,11 @@ public class PessoaJuridica extends Dados {
 		}
 
 	}
-	
-	
+
+	@Override
+	public String valorPago() {
+		return super.getNome() + ": $" + String.format("%.2f", impostos());
+
+	}
 
 }

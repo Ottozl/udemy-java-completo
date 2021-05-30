@@ -31,4 +31,10 @@ public class PessoaFisica extends Dados {
 
 	}
 
+	@Override
+	public String valorPago() {
+		return super.getNome() + ": $" + String.format("%.2f", impostos());
+
+	}
+
 }
