@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import models.exceptions.DomainException;
+import model.exceptions.DomainException;
 
 public class Reservation {
 
