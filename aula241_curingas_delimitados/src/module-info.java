@@ -5,5 +5,5 @@
  * @author ozika
  *
  */
-module Livia {
+module aula241_curingas_delimitados {
 }
